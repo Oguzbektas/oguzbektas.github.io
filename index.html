@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oguz Bektas - Data Scientist specializing in Predictive Maintenance, PHM, Machine Learning, Deep Learning, LLMs, and Explainable AI for industrial systems.">
+    <meta name="keywords" content="Oguz Bektas, Data Scientist, Machine Learning Engineer, Predictive Maintenance, PHM, Machine Learning, Deep Learning, LLMs, Large Language Models, Explainable AI, XAI, SHAP, RUL estimation, condition monitoring, vibration analysis, time series, industrial AI">
+    <meta name="author" content="Oguz Bektas">
+
+    <title>Oguz Bektas | Data Scientist · ML, Deep Learning, LLMs</title>
+
+    <meta property="og:title" content="Oguz Bektas | Data Scientist">
+    <meta property="og:description" content="Data Scientist working on Predictive Maintenance, ML, Deep Learning, LLMs, and Explainable AI.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://droguzbektas.github.io/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Oguz Bektas",
+      "alternateName": ["Oğuz Bektaş", "Dr. Oguz Bektas"],
+      "jobTitle": "Data Scientist",
+      "image": "https://droguzbektas.github.io/oguz-profile.png",
+      "description": "Data Scientist specializing in Predictive Maintenance, Prognostics and Health Management, Machine Learning, Deep Learning, Large Language Models, and Explainable AI for industrial systems.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Istanbul",
+        "addressCountry": "TR"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Istanbul",
+          "addressCountry": "TR"
+        }
+      },
+      "knowsAbout": [
+        "Data Science",
+        "Machine Learning",
+        "Deep Learning",
+        "Large Language Models",
+        "LLMs",
+        "Predictive Maintenance",
+        "Prognostics and Health Management",
+        "PHM",
+        "Remaining Useful Life Estimation",
+        "RUL",
+        "Condition Monitoring",
+        "Vibration Analysis",
+        "Signal Processing",
+        "Bearing Fault Diagnosis",
+        "Time Series Analysis",
+        "Explainable AI",
+        "XAI",
+        "SHAP",
+        "Feature Engineering",
+        "Transfer Learning",
+        "Industrial AI",
+        "Python",
+        "PyTorch",
+        "TensorFlow"
+      ],
+      "url": "https://droguzbektas.github.io",
+      "sameAs": [
+        "https://www.linkedin.com/in/oguz-b-07727846/"
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg: #0d1117;
+            --panel: #161b22;
+            --text: #e6edf3;
+            --muted: #8b949e;
+            --accent: #58a6ff;
+            --border: #30363d;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1.75rem;
+            margin-bottom: 3rem;
+        }
+        .profile-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--border);
+            flex-shrink: 0;
+        }
+        .header-text {
+            flex: 1;
+            min-width: 0;
+        }
+        h1 {
+            font-size: 2.4rem;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.02em;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.25rem;
+            }
+            .profile-photo {
+                width: 110px;
+                height: 110px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        .tagline {
+            color: var(--accent);
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 0 0 0.5rem 0;
+        }
+        .subtitle {
+            color: var(--muted);
+            margin: 0;
+            font-size: 1rem;
+        }
+        h2 {
+            font-size: 1.15rem;
+            margin: 2.5rem 0 0.8rem 0;
+            color: var(--text);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.85rem;
+            color: var(--muted);
+            font-weight: 600;
+        }
+        p {
+            margin: 0 0 1rem 0;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .skill {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 0.3rem 0.7rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-family: "SF Mono", Monaco, Consolas, monospace;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        .focus-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .focus-row {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            cursor: pointer;
+            transition: border-color 0.2s ease, background 0.2s ease;
+        }
+        .focus-row:hover {
+            border-color: var(--accent);
+            background: #1c2128;
+        }
+        .focus-row strong {
+            color: var(--accent);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        .focus-row span {
+            color: var(--muted);
+            font-size: 0.95rem;
+            display: block;
+        }
+        .focus-popup {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease, border-width 0.3s ease;
+            background: var(--panel);
+            border: 0 solid var(--accent);
+            border-radius: 8px;
+            padding: 0 1.25rem;
+            display: flex;
+            gap: 1.25rem;
+            align-items: flex-start;
+        }
+        .focus-row:hover + .focus-popup,
+        .focus-popup:hover {
+            max-height: 300px;
+            opacity: 1;
+            padding: 1.25rem;
+            border-width: 1px;
+        }
+        .focus-popup img {
+            width: 220px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px 120px 8px 8px;
+            border: 2px solid var(--border);
+            flex-shrink: 0;
+        }
+        .focus-popup-text {
+            flex: 1;
+            min-width: 0;
+        }
+        .focus-popup-text h3 {
+            color: var(--accent);
+            margin: 0 0 0.5rem 0;
+            font-size: 1rem;
+        }
+        .focus-popup-text p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+        @media (max-width: 600px) {
+            .focus-popup {
+                flex-direction: column;
+            }
+            .focus-row:hover + .focus-popup,
+            .focus-popup:hover {
+                max-height: 500px;
+            }
+            .focus-popup img {
+                width: 100%;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <img src="oguz-profile.png" alt="Oguz Bektas" class="profile-photo">
+            <div class="header-text">
+                <h1>Oguz Bektas</h1>
+                <p class="tagline">Data Scientist · ML, Deep Learning, LLMs</p>
+                <p class="subtitle">Industrial AI · Predictive maintenance · Explainable ML</p>
+            </div>
+        </header>
+
+        <h2>About</h2>
+        <p>
+            Data scientist building machine learning systems for industrial applications.
+            I work across the full stack — from raw sensor signals and time-series feature
+            engineering to deep learning models, LLM-powered tooling, and explainable AI
+            for high-stakes decisions.
+        </p>
+        <p>
+            My focus is making complex models trustworthy and useful in production:
+            predicting failures before they happen, estimating remaining useful life,
+            and turning black-box predictions into something engineers can actually act on.
+        </p>
+
+        <h2>Focus Areas</h2>
+        <div class="focus-stack">
+
+            <div class="focus-row">
+                <strong>Predictive Maintenance &amp; PHM</strong>
+                <span>Remaining useful life estimation, condition monitoring, fault diagnosis, and degradation modeling for industrial assets.</span>
+            </div>
+            <div class="focus-popup">
+                <img src="showcase-1.jpg" alt="Predictive maintenance">
+                <div class="focus-popup-text">
+                    <h3>Predictive Maintenance &amp; PHM</h3>
+                    <p>
+                        Building data-driven systems that watch industrial assets in real time —
+                        catching failures before they happen, estimating remaining useful life on
+                        benchmarks like C-MAPSS and N-CMAPSS, and turning raw sensor noise into
+                        actionable health indicators for maintenance teams.
+                    </p>
+                </div>
+            </div>
+
+            <div class="focus-row">
+                <strong>Machine Learning &amp; Deep Learning</strong>
+                <span>Time-series models, transfer learning, foundation models, and production ML pipelines.</span>
+            </div>
+            <div class="focus-popup">
+                <img src="showcase-2.jpg" alt="Machine learning and deep learning">
+                <div class="focus-popup-text">
+                    <h3>Machine Learning &amp; Deep Learning</h3>
+                    <p>
+                        End-to-end ML systems for sequential industrial data — from feature
+                        engineering on raw signals to fine-tuning time-series foundation models
+                        (TimesFM, Chronos) on domain-specific corpora, with production deployment
+                        across modern data-platform stacks.
+                    </p>
+                </div>
+            </div>
+
+            <div class="focus-row">
+                <strong>Large Language Models</strong>
+                <span>LLM engineering, retrieval-augmented generation, prompt design, and AI-powered workflows.</span>
+            </div>
+            <div class="focus-popup">
+                <img src="showcase-3.jpg" alt="Large language models">
+                <div class="focus-popup-text">
+                    <h3>Large Language Models</h3>
+                    <p>
+                        Applied LLM engineering — retrieval pipelines with vector search and
+                        hybrid retrieval, structured generation with schema validation, multi-agent
+                        orchestration with tool use, and evaluation harnesses that hold up when
+                        language models do real work.
+                    </p>
+                </div>
+            </div>
+
+            <div class="focus-row">
+                <strong>Explainable AI</strong>
+                <span>SHAP, feature attribution, model interpretability, and decision-support systems for engineers.</span>
+            </div>
+            <div class="focus-popup">
+                <img src="showcase-4.jpg" alt="Explainable AI">
+                <div class="focus-popup-text">
+                    <h3>Explainable AI</h3>
+                    <p>
+                        Making model outputs interpretable for the engineers who act on them —
+                        SHAP-based feature attribution, counterfactual explanations,
+                        CAM-guided subsequence selection for multivariate time series, and
+                        decision-support dashboards that surface the <em>why</em> behind each prediction.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Stack</h2>
+        <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">PyTorch</span>
+            <span class="skill">TensorFlow</span>
+            <span class="skill">scikit-learn</span>
+            <span class="skill">PySpark</span>
+            <span class="skill">Databricks</span>
+            <span class="skill">MLflow</span>
+            <span class="skill">Delta Lake</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Azure</span>
+            <span class="skill">LLMs</span>
+            <span class="skill">RAG</span>
+            <span class="skill">SHAP</span>
+            <span class="skill">Time Series</span>
+            <span class="skill">Signal Processing</span>
+        </div>
+
+        <h2>Currently</h2>
+        <p>
+            Working on industrial AI projects — prognostics, LLM-powered tooling,
+            and applied research with a clear path to production.
+        </p>
+
+        <h2>Connect</h2>
+        <p>
+            <a href="https://www.linkedin.com/in/oguz-b-07727846/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">
+                LinkedIn →
+            </a>
+        </p>
+
+        <footer>
+            © Oguz Bektas
+        </footer>
+
+    </main>
+
+</body>
+</html>
