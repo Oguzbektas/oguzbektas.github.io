@@ -12,7 +12,8 @@
     <meta property="og:title" content="Oguz Bektas | Data Scientist">
     <meta property="og:description" content="Data Scientist working on Predictive Maintenance, ML, Deep Learning, LLMs, and Explainable AI.">
     <meta property="og:type" content="profile">
-    <meta property="og:url" content="https://droguzbektas.github.io/">
+    <meta property="og:url" content="https://oguzbektas.github.io/">
+    <meta property="og:image" content="https://oguzbektas.github.io/oguz-profile.png">
 
     <script type="application/ld+json">
     {
@@ -21,7 +22,7 @@
       "name": "Oguz Bektas",
       "alternateName": ["Oğuz Bektaş", "Dr. Oguz Bektas"],
       "jobTitle": "Data Scientist",
-      "image": "https://droguzbektas.github.io/oguz-profile.jpg",
+      "image": "https://oguzbektas.github.io/oguz-profile.png",
       "description": "Data Scientist specializing in Predictive Maintenance, Prognostics and Health Management, Machine Learning, Deep Learning, Large Language Models, and Explainable AI for industrial systems.",
       "address": {
         "@type": "PostalAddress",
@@ -35,6 +36,17 @@
           "addressLocality": "Istanbul",
           "addressCountry": "TR"
         }
+      },
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Istanbul Medeniyet University",
+        "alternateName": "İstanbul Medeniyet Üniversitesi",
+        "url": "https://www.medeniyet.edu.tr/"
+      },
+      "worksFor": {
+        "@type": "CollegeOrUniversity",
+        "name": "Istanbul Medeniyet University",
+        "url": "https://www.medeniyet.edu.tr/"
       },
       "knowsAbout": [
         "Data Science",
@@ -62,7 +74,7 @@
         "PyTorch",
         "TensorFlow"
       ],
-      "url": "https://droguzbektas.github.io",
+      "url": "https://oguzbektas.github.io/",
       "sameAs": [
         "https://www.linkedin.com/in/oguz-b-07727846/"
       ]
@@ -138,6 +150,21 @@
             color: var(--muted);
             margin: 0;
             font-size: 1rem;
+        }
+        .affiliation {
+            color: var(--muted);
+            margin: 0.4rem 0 0 0;
+            font-size: 0.95rem;
+        }
+        .affiliation a {
+            color: var(--muted);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--muted);
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+        .affiliation a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
         }
         h2 {
             font-size: 1.15rem;
@@ -269,8 +296,11 @@
             <img src="oguz-profile.png" alt="Oguz Bektas" class="profile-photo">
             <div class="header-text">
                 <h1>Oguz Bektas</h1>
-                <p class="tagline">Data Scientist & Reseacher · ML, Deep Learning, LLMs</p>
+                <p class="tagline">Data Scientist &amp; Researcher · ML, Deep Learning, LLMs</p>
                 <p class="subtitle">Industrial AI · Predictive maintenance · Explainable ML</p>
+                <p class="affiliation">
+                    <a href="https://www.medeniyet.edu.tr/" target="_blank" rel="noopener">Istanbul Medeniyet University</a>
+                </p>
             </div>
         </header>
 
