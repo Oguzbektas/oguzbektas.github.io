@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oguz Bektas - Data Scientist specializing in Predictive Maintenance, PHM, Machine Learning, Deep Learning, LLMs, and Explainable AI for industrial systems.">
+    <meta name="description" content="Oguz Bektas / Oğuz Bektaş - Predictive Maintenance, PHM, Machine Learning, Deep Learning, LLMs ve Explainable AI alanlarında çalışan Data Scientist ve akademik araştırmacı.">
     <meta name="keywords" content="Oguz Bektas, Data Scientist, Machine Learning Engineer, Predictive Maintenance, PHM, Machine Learning, Deep Learning, LLMs, Large Language Models, Explainable AI, XAI, SHAP, RUL estimation, condition monitoring, medeniyet, vibration analysis, time series, industrial AI, Doç. Dr. Oğuz Bektaş">
     <meta name="author" content="Oguz Bektas">
 
-    <title>Oguz Bektas | Data Scientist & Researcher · ML, Deep Learning, LLMs</title>
+    <title>Oguz Bektas | Oğuz Bektaş · Data Scientist & Researcher</title>
 
     <meta property="og:title" content="Oguz Bektas | Data Scientist">
     <meta property="og:description" content="Data Scientist working on Predictive Maintenance, ML, Deep Learning, LLMs, and Explainable AI.">
@@ -189,6 +189,33 @@
             font-size: 0.85rem;
             font-family: "SF Mono", Monaco, Consolas, monospace;
         }
+
+        .language-switch {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.9rem;
+        }
+        .lang-btn {
+            border: 1px solid var(--border);
+            background: var(--panel);
+            color: var(--text);
+            padding: 0.35rem 0.75rem;
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        .lang-btn.active {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .lang-section {
+            display: none;
+        }
+        .lang-section.active {
+            display: block;
+        }
+
         footer {
             margin-top: 3rem;
             padding-top: 1.5rem;
@@ -291,12 +318,17 @@
             <img src="oguz-profile.png" alt="Oguz Bektas" class="profile-photo">
             <div class="header-text">
                 <h1>Oguz Bektas</h1>
-                <p class="tagline">Data Scientist &amp; Researcher · ML, Deep Learning, LLMs</p>
-                <p class="subtitle">Industrial AI · Predictive maintenance · Explainable ML</p>
+                <p class="tagline" data-i18n-en="Data Scientist &amp; Researcher · ML, Deep Learning, LLMs" data-i18n-tr="Veri Bilimci ve Akademik Araştırmacı · ML, Derin Öğrenme, LLM">Data Scientist &amp; Researcher · ML, Deep Learning, LLMs</p>
+                <p class="subtitle" data-i18n-en="Industrial AI · Predictive maintenance · Explainable ML" data-i18n-tr="Endüstriyel Yapay Zekâ · Kestirimci Bakım · Açıklanabilir Makine Öğrenmesi">Industrial AI · Predictive maintenance · Explainable ML</p>
+                <div class="language-switch" aria-label="Site dili">
+                    <button class="lang-btn active" type="button" data-lang="en">English</button>
+                    <button class="lang-btn" type="button" data-lang="tr">Türkçe</button>
+                </div>
 
             </div>
         </header>
 
+        <section class="lang-section active" data-content-lang="en">
         <h2>About</h2>
         <p>
             Data scientist building machine learning systems for industrial applications.
@@ -462,11 +494,154 @@
             
         </p>
 
+        </section>
+
+        <section class="lang-section" data-content-lang="tr">
+        <h2>Hakkında</h2>
+        <p>
+            Endüstriyel uygulamalar için makine öğrenmesi sistemleri geliştiren bir veri bilimci ve akademik araştırmacıdır.
+            Çalışmaları; ham sensör sinyallerinden ve zaman serisi özellik mühendisliğinden derin öğrenme modellerine,
+            LLM tabanlı araçlara ve yüksek etkili karar süreçleri için açıklanabilir yapay zekâ yaklaşımlarına kadar uzanır.
+        </p>
+        <p>
+            Temel odak noktası, karmaşık modelleri üretim ortamında güvenilir ve kullanılabilir hâle getirmektir:
+            arızaları gerçekleşmeden önce tahmin etmek, kalan faydalı ömür kestirimi yapmak ve kara kutu model çıktılarını
+            mühendislerin aksiyon alabileceği anlaşılır bilgilere dönüştürmek.
+        </p>
+
+        <h2>Odak Alanları</h2>
+        <div class="focus-stack">
+
+            <div class="focus-row">
+                <strong>Kestirimci Bakım ve PHM</strong>
+                <span>Endüstriyel varlıklar için kalan faydalı ömür kestirimi, durum izleme, arıza teşhisi ve bozulma modelleme.</span>
+            </div>
+            <div class="focus-popup">
+                <img src="showcase-1.jpg" alt="Kestirimci bakım">
+                <div class="focus-popup-text">
+                    <h3>Kestirimci Bakım ve PHM</h3>
+                    <p>
+                        Endüstriyel varlıkları gerçek zamanlı izleyen veri odaklı sistemler geliştirme; arızaları oluşmadan yakalama,
+                        kalan faydalı ömrü kestirme ve ham sensör verisini bakım ekipleri için anlamlı sağlık göstergelerine dönüştürme.
+                    </p>
+                </div>
+            </div>
+
+            <div class="focus-row">
+                <strong>Makine Öğrenmesi ve Derin Öğrenme</strong>
+                <span>Zaman serisi modelleri, transfer öğrenme, temel modeller ve üretim odaklı makine öğrenmesi boru hatları.</span>
+            </div>
+            <div class="focus-popup">
+                <img src="showcase-2.jpg" alt="Makine öğrenmesi ve derin öğrenme">
+                <div class="focus-popup-text">
+                    <h3>Makine Öğrenmesi ve Derin Öğrenme</h3>
+                    <p>
+                        Ardışık endüstriyel veriler için uçtan uca ML sistemleri; ham sinyallerden özellik çıkarımı,
+                        zaman serisi temel modellerinin alan verisine uyarlanması ve modern veri platformları üzerinde üretim dağıtımı.
+                    </p>
+                </div>
+            </div>
+
+            <div class="focus-row">
+                <strong>Büyük Dil Modelleri</strong>
+                <span>LLM mühendisliği, retrieval-augmented generation, prompt tasarımı ve yapay zekâ destekli iş akışları.</span>
+            </div>
+            <div class="focus-popup">
+                <img src="showcase-3.jpg" alt="Büyük dil modelleri">
+                <div class="focus-popup-text">
+                    <h3>Büyük Dil Modelleri</h3>
+                    <p>
+                        Uygulamalı LLM mühendisliği; vektör arama ve hibrit retrieval kullanan RAG hatları,
+                        şema doğrulamalı yapılandırılmış çıktı üretimi, araç kullanan çok ajanlı orkestrasyon ve sağlam değerlendirme akışları.
+                    </p>
+                </div>
+            </div>
+
+            <div class="focus-row">
+                <strong>Açıklanabilir Yapay Zekâ</strong>
+                <span>SHAP, özellik katkısı analizi, model yorumlanabilirliği ve mühendisler için karar destek sistemleri.</span>
+            </div>
+            <div class="focus-popup">
+                <img src="showcase-4.jpg" alt="Açıklanabilir yapay zekâ">
+                <div class="focus-popup-text">
+                    <h3>Açıklanabilir Yapay Zekâ</h3>
+                    <p>
+                        Model çıktılarını aksiyon alacak mühendisler için yorumlanabilir hâle getirme; SHAP tabanlı özellik katkısı,
+                        karşı-olgusal açıklamalar, çok değişkenli zaman serilerinde CAM destekli alt dizi seçimi ve her tahminin nedenini gösteren karar destek panelleri.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Teknoloji Yığını</h2>
+        <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">PyTorch</span>
+            <span class="skill">TensorFlow</span>
+            <span class="skill">scikit-learn</span>
+            <span class="skill">PySpark</span>
+            <span class="skill">Databricks</span>
+            <span class="skill">MLflow</span>
+            <span class="skill">Delta Lake</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Azure</span>
+            <span class="skill">LLMs</span>
+            <span class="skill">RAG</span>
+            <span class="skill">SHAP</span>
+            <span class="skill">Time Series</span>
+            <span class="skill">Signal Processing</span>
+        </div>
+
+        <h2>Güncel Çalışmalar</h2>
+        <p>
+            Endüstriyel yapay zekâ projeleri üzerinde çalışmaktadır: prognostik analiz, LLM destekli araç geliştirme
+            ve üretim ortamına taşınabilir uygulamalı araştırma.
+        </p>
+
+        <h2>Bağlantılar</h2>
+        <p>
+            <a href="https://www.linkedin.com/in/oguz-b-07727846/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">LinkedIn →</a>
+            <a href="https://scholar.google.com.tr/citations?user=PcnJkRgAAAAJ&hl=tr" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">Google Scholar →</a>
+            <a href="https://www.researchgate.net/profile/Oguz-Bektas" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">ResearchGate →</a>
+            <a href="https://sites.google.com/view/doc-dr-oguz-bektas/home" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">Google Sites →</a>
+            <a href="https://droguzbektas.github.io/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">GitHub Pages Akademik Profil →</a>
+            <a href="https://x.com/drOguzBektas" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">X/Twitter →</a>
+            <a href="https://www.warwickgrad.net/users/droguzbektas/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">Warwick Grad →</a>
+            <a href="https://huggingface.co/droguzbektas" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">Hugging Face →</a>
+            <a href="https://warwick.academia.edu/OguzBektas/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">Academia →</a>
+            <a href="https://about.me/droguzbektas/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">About.me →</a>
+            <a href="https://droguzbektas-group.gitlab.io/droguzbektas-project/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">GitLab Pages →</a>
+            <a href="https://medium.com/@droguzbektas" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">Medium →</a>
+            <a href="https://books.google.com.tr/books/about/An_Adaptive_Data_Filtering_Model_for_Rem.html?id=LXTo0QEACAAJ&redir_esc=y" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 500;">Books Google →</a>
+        </p>
+        </section>
+
         <footer>
-            © Oguz Bektas · Doç. Dr. Oğuz Bektaş
+            © Oguz Bektas · Oğuz Bektaş
         </footer>
 
     </main>
+
+
+    <script>
+      const langButtons = document.querySelectorAll('.lang-btn');
+      const langSections = document.querySelectorAll('.lang-section');
+      const i18nNodes = document.querySelectorAll('[data-i18n-en][data-i18n-tr]');
+
+      function setLanguage(lang) {
+        document.documentElement.lang = lang;
+        langButtons.forEach(button => button.classList.toggle('active', button.dataset.lang === lang));
+        langSections.forEach(section => section.classList.toggle('active', section.dataset.contentLang === lang));
+        i18nNodes.forEach(node => {
+          node.innerHTML = node.dataset[`i18n${lang.charAt(0).toUpperCase() + lang.slice(1)}`];
+        });
+        localStorage.setItem('siteLanguage', lang);
+      }
+
+      langButtons.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
+      setLanguage(localStorage.getItem('siteLanguage') || 'en');
+    </script>
 
 </body>
 </html>
